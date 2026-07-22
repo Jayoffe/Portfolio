@@ -39,12 +39,6 @@ A desktop application for managing products, stock levels, and sales transaction
 
 ---
 
-## 📊 GitHub Stats
-
-![Jayoffe's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jayoffe&show_icons=true&theme=default)
-
----
-
 ## 📫 Let's Connect
 
 I'm always open to new opportunities, collaborations, or just a chat about tech!

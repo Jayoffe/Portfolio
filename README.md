@@ -49,9 +49,8 @@ A desktop application for managing products, stock levels, and sales transaction
 
 I'm always open to new opportunities, collaborations, or just a chat about tech!
 
-*   **Portfolio:** [Link to your live portfolio site here]
-*   **LinkedIn:** [Link to your LinkedIn profile]
-*   **Email:** [Your professional email address]
+*   **Portfolio:** https://jayoffe.github.io/Portfolio/
+*   **Email:** jayoffepascua@gmail.com
 
 ---
 

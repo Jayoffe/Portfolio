@@ -44,7 +44,7 @@ A desktop application for managing products, stock levels, and sales transaction
 I'm always open to new opportunities, collaborations, or just a chat about tech!
 
 *   **Portfolio:** https://jayoffe.github.io/
-*   **Email:** jayoffepascua@gmail.com
+*   **Email:** jayoffebusiness@gmail.com
 
 ---
 

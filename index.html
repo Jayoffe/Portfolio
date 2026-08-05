@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayoffe Pascua — Portfolio</title>
+    <title>Jayoffe Pascua'</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +98,9 @@
         }
         .project-item:hover { background: var(--accent-dim); margin: 0 -1rem; padding: 1.5rem 1rem; border-radius: var(--radius); border-color: transparent; }
         .project-year { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text-muted); padding-top: 0.2rem; }
-        .project-info h3 { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.3rem; letter-spacing: -0.01em; }
+        .project-info h3 { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.3rem; letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 0.3rem; }
+        .project-info h3 .external-icon { font-size: 0.75rem; color: var(--text-muted); opacity: 0; transition: opacity var(--transition); }
+        .project-item:hover .project-info h3 .external-icon { opacity: 1; }
         .project-info p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; }
         .project-stack { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--text-muted); text-align: right; padding-top: 0.2rem; }
 
@@ -157,6 +159,16 @@
         footer a:hover { color: var(--text); }
         .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
 
+        #backToTop {
+            position: fixed; bottom: 1.5rem; right: 1.5rem;
+            width: 40px; height: 40px; border-radius: 50%;
+            background: var(--surface); border: 1px solid var(--border);
+            color: var(--text-muted); cursor: pointer; font-size: 1.1rem;
+            z-index: 40; opacity: 0; transition: opacity 0.3s; pointer-events: none;
+            display: flex; align-items: center; justify-content: center;
+        }
+        #backToTop:hover { border-color: var(--accent); color: var(--accent); }
+
         @keyframes fadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
         .anim-in { animation: fadeIn 0.6s ease forwards; }
         .anim-delay-1 { animation-delay: 0.1s; opacity: 0; }
@@ -209,7 +221,7 @@
             <a href="https://github.com/Jayoffe/QR-Code-Sales-and-Inventory-System" target="_blank" rel="noopener" class="project-item">
                 <div class="project-year">2024</div>
                 <div class="project-info">
-                    <h3>QR Code Sales & Inventory System</h3>
+                    <h3>QR Code Sales & Inventory System <span class="external-icon">↗</span></h3>
                     <p>Complete management system for Mindeus Shop with QR scanning, real-time stock updates, and reporting.</p>
                 </div>
                 <div class="project-stack">C# · MySQL</div>
@@ -217,7 +229,7 @@
             <a href="https://github.com/Jayoffe/MinSU---Scholarship-System" target="_blank" rel="noopener" class="project-item">
                 <div class="project-year">2024</div>
                 <div class="project-info">
-                    <h3>MinSU Scholarship System</h3>
+                    <h3>MinSU Scholarship System <span class="external-icon">↗</span></h3>
                     <p>Web-based platform for scholarship applications with document uploads and status tracking.</p>
                 </div>
                 <div class="project-stack">PHP · Lavalite · MySQL</div>
@@ -225,7 +237,7 @@
             <a href="https://github.com/Jayoffe/Bus-Transportation-System" target="_blank" rel="noopener" class="project-item">
                 <div class="project-year">2024</div>
                 <div class="project-info">
-                    <h3>Bus Transportation System</h3>
+                    <h3>Bus Transportation System <span class="external-icon">↗</span></h3>
                     <p>Scheduling, ticketing, and passenger management for public bus operations.</p>
                 </div>
                 <div class="project-stack">C# · Web Forms</div>
@@ -233,7 +245,7 @@
             <a href="https://github.com/Jayoffe/Inventory-and-Sales-System" target="_blank" rel="noopener" class="project-item">
                 <div class="project-year">2024</div>
                 <div class="project-info">
-                    <h3>Inventory & Sales System</h3>
+                    <h3>Inventory & Sales System <span class="external-icon">↗</span></h3>
                     <p>Desktop application for product management and sales tracking with full CRUD support.</p>
                 </div>
                 <div class="project-stack">C#</div>
@@ -241,7 +253,7 @@
             <a href="https://github.com/Jayoffe/Portfolio" target="_blank" rel="noopener" class="project-item">
                 <div class="project-year">2025</div>
                 <div class="project-info">
-                    <h3>Portfolio Website</h3>
+                    <h3>Portfolio Website <span class="external-icon">↗</span></h3>
                     <p>Personal site built with clean HTML, CSS, and JavaScript. Minimal, responsive, and fast.</p>
                 </div>
                 <div class="project-stack">HTML · CSS · JS</div>
@@ -302,8 +314,10 @@
             <span style="color: var(--text-muted);">·</span>
             <a href="https://open.spotify.com/playlist/4ckaH84lZDasVQ8dANmskR" target="_blank" rel="noopener">My playlist</a>
         </div>
-        <p>Jayoffe Pascua — IT Student</p>
+        <p>&copy; 2025 Jayoffe Pascua — IT Student</p>
     </footer>
+
+    <button id="backToTop" aria-label="Back to top">↑</button>
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -315,6 +329,14 @@
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
+
+        const backBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            const show = window.scrollY > 400;
+            backBtn.style.opacity = show ? '1' : '0';
+            backBtn.style.pointerEvents = show ? 'all' : 'none';
+        });
+        backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
         const contactForm = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
